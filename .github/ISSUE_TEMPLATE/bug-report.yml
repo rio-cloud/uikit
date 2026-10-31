@@ -1,0 +1,42 @@
+name: Bug report
+description: Report something that is not working as expected.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Describe the problem below. You can attach screenshots to the text fields. Issues are public; do not include private information.
+  - type: textarea
+    id: context
+    attributes:
+      label: Component / topic and context
+      description: The playground fills this in automatically. Otherwise, add the component, documentation link, and UIKIT version if known.
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe the behavior you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the example...\n2. ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and operating system
+      placeholder: For example, Chrome on macOS
+  - type: textarea
+    id: details
+    attributes:
+      label: Screenshots and additional details

@@ -1,0 +1,23 @@
+name: Feedback
+description: Share your experience or suggest an improvement.
+title: "[Feedback] "
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: Tell us about your experience with UIKIT. Issues are public; do not include private information.
+  - type: textarea
+    id: context
+    attributes:
+      label: Component / topic and context
+      description: The playground fills this in automatically. Otherwise, add the component, documentation link, and UIKIT version if known.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+    validations:
+      required: true
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Suggestions for improvement

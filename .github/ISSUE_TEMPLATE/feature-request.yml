@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest a capability you are missing.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Help us understand your use case and the capability you need. Issues are public; do not include private information.
+  - type: textarea
+    id: context
+    attributes:
+      label: Component / topic and context
+      description: The playground fills this in automatically. Otherwise, add the component, documentation link, and UIKIT version if known.
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Problem or use case
+      description: What are you trying to achieve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Desired solution
+      description: How would you like UIKIT to support this?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
